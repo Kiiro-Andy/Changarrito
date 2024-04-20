@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.search-input {
+    /* Estilos básicos */
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+
+    /* Estilos de sombra */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+
+    /* Estilos de enfoque */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave al enfoque */
+}
+
+.search-input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Cambia la sombra cuando el input está enfocado */
+}
